@@ -1,7 +1,6 @@
-${videoURL}
 <div class="overlay">
-  <div class="headline">Headline</div>
-  <div class="subheadline">SubHeadline</div>
+  <div class="headline">${headline}</div>
+  <div class="subheadline">${subheadline}</div>
   <div class="preview">
     <img class="preview-image"/>
     <img class="play-icon"/>
@@ -10,5 +9,5 @@ ${videoURL}
 <video id="demoVideo" class="video-js vjs-default-skin demo-video hidden"
        controls preload="auto" width="100%" height="100%"
        data-setup='{ "controls": false, "autoplay":false, "preload":"auto", "loop": false }'>
-  <source src="http://player.vimeo.com/external/95243278.mobile.mp4?s=85f7f02be70dae80140b30c7b6b6b5df" type='video/mp4' />
+  <source src="${videoURL}" type='video/mp4' />
 </video>
